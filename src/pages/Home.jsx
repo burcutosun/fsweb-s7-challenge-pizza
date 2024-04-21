@@ -19,9 +19,20 @@ export default function Home() {
   const handleCategory = (category) => {
     setCategory(category);
   };
+
+  const homeBanner = {
+    height: "40rem",
+    display: "flex",
+    justifyContent: "center",
+    backgroundImage: `url("./assets/mile1-assets/home-banner.png")`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    textAlign: "center",
+  };
+
   return (
     <Container className="home-container" fluid>
-      <Row className="home-banner g-0 ">
+      <Row className="g-0" style={homeBanner}>
         <img
           className="home-logo"
           src="./assets/mile1-assets/logo.svg"

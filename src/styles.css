@@ -13,16 +13,6 @@ body {
   padding: 0;
 }
 
-.home-banner {
-  height: 40rem;
-  display: flex;
-  justify-content: center;
-  background: url("./assets/mile1-assets/home-banner.png");
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
 .home-logo {
   width: 22.688rem;
   height: 2.938rem;
