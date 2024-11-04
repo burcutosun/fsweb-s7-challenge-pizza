@@ -1,5 +1,5 @@
-import React from 'react';
-import { Col, Input, Label, Row } from 'reactstrap';
+import React from "react";
+import { Col, Input, Label, Row } from "reactstrap";
 
 export default function Extras(props) {
   const { form, extras, errors, handleChange } = props;
@@ -17,11 +17,7 @@ export default function Extras(props) {
       {chunkedExtras.map((row, rowIndex) => (
         <Row key={rowIndex} className="g-0 my-2">
           {row.map((item, colIndex) => (
-            <Col
-              className="gray-text mx-2"
-              check
-              key={rowIndex * 3 + colIndex}
-            >
+            <Col className="gray-text mx-2" check key={rowIndex * 3 + colIndex}>
               <Input
                 id={`extra${rowIndex * 3 + colIndex}`}
                 name="extras"
@@ -29,7 +25,6 @@ export default function Extras(props) {
                 value={item}
                 checked={form.extras.includes(item)}
                 onChange={handleChange}
-                style={{backgroundColor:'#faf7f2'}}
               />
               <Label htmlFor={`extra${rowIndex * 3 + colIndex}`} check>
                 <span className="mx-2">{item}</span>
